@@ -1,0 +1,87 @@
+@charset "UTF-8";
+/* Custom CSS Document */
+
+
+
+   .container-fluid{
+	   width:auto;
+	   max-width:1800px;
+	    
+   }
+   .row{
+	   width:auto;
+	   max-width:1800px;
+	   padding:0px;
+	    
+   }
+   
+   .col-md-3{
+	   width:auto;
+	   max-width:474px;
+	   min-width:474px;
+	   padding:0px; 
+	   margin-left:20px;
+   }
+      .table-condensed table-bordered table-striped{
+	   width:auto;
+	   max-width:474px;
+	   min-width:474px;
+	   
+   }
+
+   .course-col{
+	   width:auto;
+	   min-width:15px; 
+   }
+   .title-col{
+	   width:auto;
+	   max-width:350px;
+	   min-width:250px; 
+   }
+   
+   .class-col{
+	   width:auto;
+	   min-width:10px; 
+   }
+   .lab-col{
+	   width:auto;
+	   min-width:10px; 
+   }
+   .credits-col{
+	   width:auto;
+	   min-width:10px; 
+   }
+   
+   .table-striped tbody tr:nth-of-type(odd){
+		background-color:rgba(227,236,248,1);	
+		 
+	}
+	
+	.table-striped tbody td{
+	    font-size:16px;
+	
+	}
+   
+   
+   .col-md-6{
+	  ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 30%;
+	  margin-top:85px;
+	
+	      
+   }	
+	
+	p{
+	   font-size:18px;
+	}
+	
+	img{
+		max-width:315px;
+		margin: 5px;
+		
+	}
+	
+
+	
+	
