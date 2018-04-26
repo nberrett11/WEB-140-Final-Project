@@ -4,28 +4,92 @@
 
 
    .container-fluid{
-	   width:auto;
+	   width:100%;
 	   max-width:1800px;
+	   padding-right:5px;
 	    
    }
+   
    .row{
 	   width:auto;
 	   max-width:1800px;
 	   padding:0px;
-	    
+	   margin-right: 0px;
+	   margin-left: 0px;
    }
+ 
+   
+   .jumbotron {
+	padding: 2rem 1rem;
+	margin-bottom: 1.5rem;
+	background-color: #e9ecef;
+	border-radius: .3rem;
+}
+
+  .display-2 {
+	  font-size: 5.0rem;
+	  font-weight: 300;
+	  line-height: 1.2;
+  }
+	 
+	 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	  font-family: inherit;
+	  font-weight: 400;
+	  line-height: 1.0;
+	  color: inherit;
+  }
+  
+  .h1, h1 {
+	  font-size: 2.0rem;
+  }
+  
+  .h2, h2,{
+	  font-size: 1.8rem;
+  }
+  .h3, h3{
+	  font-size: 1.5rem;
+  }
+  
+  .navbar {
+	  position: relative;
+	  display: -webkit-box;
+	  display: -ms-flexbox;
+	  display: flex;
+	  -ms-flex-wrap: wrap;
+	  flex-wrap: wrap;
+	  /* -webkit-box-align: center; */
+	  -ms-flex-align: center;
+	  /* align-items: center; */
+	  -webkit-box-pack: justify;
+	  -ms-flex-pack: justify;
+	  justify-content: space-between;
+	  padding: .5rem 1rem;
+  }
+  
+  .mr-3, .mx-3 {
+	  margin-right: 1.5rem !important;
+  }
+  
+  .form-inline mt-2 mt-md-0{
+	  float:right;
+	  margin:30px;
+	  
+  }
+  
+
    
    .col-md-3{
 	   width:auto;
-	   max-width:474px;
-	   min-width:474px;
+	   max-width:465px;
+	   min-width:465px;
 	   padding:0px; 
-	   margin-left:20px;
+	   margin-left:10px;
+	   margin-bottom:10px;
    }
       .table-condensed table-bordered table-striped{
 	   width:auto;
-	   max-width:474px;
-	   min-width:474px;
+	   max-width:465px;
+	   min-width:465px;
 	   
    }
 
@@ -58,7 +122,7 @@
 	}
 	
 	.table-striped tbody td{
-	    font-size:16px;
+	    font-size:1.0rem;
 	
 	}
    
@@ -66,19 +130,31 @@
    .col-md-6{
 	  ms-flex: 0 0 50%;
       flex: 0 0 50%;
-      max-width: 30%;
-	  margin-top:85px;
-	
+      max-width: 35%;
+	  margin-top:5rem;
 	      
    }	
 	
 	p{
-	   font-size:18px;
+	   font-size:1.4rem;
+	   font-weight:200;
 	}
 	
+	
+	.col-md-4 {
+	  -webkit-box-flex: 0;
+	  ms-flex: 0 0 0.333333%;
+	  flex: 0 0 30.333333%;
+	  max-width: 20.%;
+	  margin-top:5rem;
+	  padding-right: 0px;
+	  max-width: 30.333333%;
+}
+	
 	img{
-		max-width:315px;
-		margin: 5px;
+		width:80%;
+		margin-bottom:15px;
+		float:right;
 		
 	}
 	
