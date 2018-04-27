@@ -78,27 +78,30 @@
 	}
   
    .col-md-3{
-	   width:100%;
-	   max-width:565px;
-	   min-width:465px;
+	   flex:2;
+	   min-width:450px;
+	   max-width:600px;
 	   padding:0px; 
 	   margin-left:10px;
 	   margin-bottom:10px;
    }
-   .table-condensed table-bordered table-striped{
-	   width:auto;
-	   max-width:565px;
-	   min-width:465px;
-	   
+ 
+  .table-condensed table-bordered table-striped{
+	  width:100%;
+	  
+  }
+   
+    table{
+	   width:100%;
+	  
    }
 
    .course-col{
 	   width:auto;
-	   min-width:15px; 
+	   min-width:20px; 
    }
    .title-col{
 	   width:auto;
-	   max-width:450px;
 	   min-width:250px; 
    }
    
@@ -121,46 +124,84 @@
 	}
 	
 	.table-striped tbody td{
-	    font-size:calc(0.8rem + 0.2vw);
+	    font-size:calc(0.5rem + 0.4vw);
 	
 	}
    
    
    .col-md-6{
-	  ms-flex: 0 0 50%;
-      flex: 0 0 50%;
-      max-width: 35%;
-	  margin-top:4rem;
+	  flex:2;
+      min-width: 360px;
+	  margin-top:65px;
 	      
    }	
 	
 	p{
-	   font-size:calc(1.4rem + 0.2vw);
+	   font-size:calc(1.1rem + 0.2vw);
 	   font-weight:200;
 	}
 	
 	
 	.col-md-4 {
-	  -webkit-box-flex: 0;
-	  ms-flex: 0 0 20.333333%;
-	  flex: 0 0 30.333333%;
-	  max-width: 20.%;
-	  margin-top:4rem;
-	  padding-right: 0px;
+	  flex:1;
+	  min-width:200px;
+	  margin-top:65px;
+	  padding-right:0px;
 	 
-}
+   }
 	
 	img{
-		width:80%;
+		width:100%;
 		margin-bottom:15px;
 		float:right;
 		
 	}
 	
-	@media only screen and (max-width: 768px) {
-
-}
 	
+	
+@media screen and (max-width: 825px) {
+	.col-md-3{
+	   min-width:300px;
+	}
+	.title-col{
+	   width:auto;
+	   min-width:100px; 
+    }
+	
+   .table-striped tbody td{
+	    font-size: calc(0.5rem + 0.5vw);
+	
+	}
+	
+}
 
+@media screen and (max-width: 700px) {
+	.table-striped tbody td{
+	    font-size: calc(0.5rem + 0.8vw);
+	
+	}
+	
+}
+
+@media screen and (max-width: 360px) {
+	 .col-md-3{
+	   min-width:200px;
+	}
+	.title-col{
+	   width:auto;
+	   min-width:75px; 
+    }
+	
+   .table-striped tbody td{
+	    font-size: calc(0.5rem + 0.4vw);
+	
+	}
+	 
+	 .col-md-6{
+      min-width: 320px;     
+   }
+   
+	
+}
 	
 	
