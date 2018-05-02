@@ -3,23 +3,30 @@ $(document).ready(function() {
     //Welcome alert when website first loads
     $('.welcomeAlert').slideToggle(1000).delay(5000).slideToggle(1000);
 
-    // Drops down all course requirment tables
-    $('.dda').click(function() {
-        $('.dropDwnAll').slideToggle();
-    });
 
     //Changes text depending on if collapsed.
     var flag = true;
     $('#expandToggle').click(function() {
         if (flag === true) {
             $('#expandToggle').text("Collapse all");
+            $('.dropDwnAll').slideDown();
             flag = false;
         } else {
             $('#expandToggle').text("Expand all");
+            $('.dropDwnAll').slideUp();
+
             flag = true;
 
         }
     });
+
+
+
+    // // Drops down all course requirment tables
+    // $('.dda').click(function() {
+    //     if(flag === true){}
+    //     $('.dropDwnAll').slideToggle();
+    // });
 
 
     //Drop down when table header is clicked
