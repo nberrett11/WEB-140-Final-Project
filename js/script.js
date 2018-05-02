@@ -1,12 +1,26 @@
 $(document).ready(function() {
 
     //Welcome alert when website first loads
-    alert("We want to thank you for visiting our site.");
+    $('.welcomeAlert').slideToggle(1000).delay(5000).slideToggle(1000);
 
     // Drops down all course requirment tables
-    $('.dd-btn').click(function() {
+    $('.dda').click(function() {
         $('.dropDwnAll').slideToggle();
     });
+
+    //Changes text depending on if collapsed.
+    var flag = true;
+    $('#expandToggle').click(function() {
+        if (flag === true) {
+            $('#expandToggle').text("Collapse all");
+            flag = false;
+        } else {
+            $('#expandToggle').text("Expand all");
+            flag = true;
+
+        }
+    });
+
 
     //Drop down when table header is clicked
 
@@ -33,4 +47,13 @@ $(document).ready(function() {
     });
 
 
+    //Dynamically changes to bold depending on the time of day
+    var time = new Date();
+    var hr = time.getHours();
+
+    if (hr > 19 || hr < 7) {
+        $('p').addClass("nightBold");
+    } else {
+        $('p').removeClass('nightBold');
+    }
 });

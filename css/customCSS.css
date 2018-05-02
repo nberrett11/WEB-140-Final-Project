@@ -62,6 +62,14 @@ h3 {
     font-size: calc(0.8rem + 0.8vw);
 }
 
+.welcomeAlert {
+    display: none;
+    text-align: center;
+    background: rgba(75, 77, 80, 0.5);
+    color: white;
+    padding: 5px;
+}
+
 .navbar {
     position: relative;
     display: -webkit-box;
@@ -149,6 +157,10 @@ p {
     font-weight: 200;
 }
 
+.nightBold {
+    font-weight: bold;
+}
+
 .col-md-4 {
     flex: 1;
     min-width: 200px;
@@ -162,6 +174,10 @@ img {
     float: right;
 }
 
+.dropDwnAll {
+    display: none;
+}
+
 @media screen and (max-width: 825px) {
     .col-md-3 {
         min-width: 300px;
@@ -173,10 +189,6 @@ img {
     .table-striped tbody td {
         font-size: calc(0.5rem + 0.5vw);
     }
-}
-
-.dropDwnAll {
-    display: none;
 }
 
 @media screen and (max-width: 700px) {
