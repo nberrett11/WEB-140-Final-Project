@@ -52,6 +52,13 @@ $(document).ready(function() {
     $('.dd7').click(function() {
         $('.dropDwn7').slideToggle();
     });
+	   $('.navbar-toggler').click(function() {
+		$('.navbar-collapse').toggleClass('collapse show');
+		
+		
+    });
+	
+	
 
 
     //Dynamically changes to bold depending on the time of day
@@ -59,8 +66,7 @@ $(document).ready(function() {
     var hr = time.getHours();
 
     if (hr > 19 || hr < 7) {
-        $('p').addClass("nightBold");
-    } else {
-        $('p').removeClass('nightBold');
+   $('p').css("font-weight", "bolder");
+   $('td').css("font-weight", "bolder");
     }
 });

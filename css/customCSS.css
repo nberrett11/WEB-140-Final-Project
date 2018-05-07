@@ -157,9 +157,6 @@ p {
     font-weight: 200;
 }
 
-.nightBold {
-    font-weight: bold;
-}
 
 .col-md-4 {
     flex: 1;
@@ -206,7 +203,7 @@ img {
         min-width: 75px;
     }
     .table-striped tbody td {
-        font-size: calc(0.5rem + 0.4vw);
+        font-size: calc(0.5rem + 0.8vw);
     }
     .col-md-6 {
         min-width: 320px;
